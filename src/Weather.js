@@ -21,11 +21,7 @@ export default function Weather() {
       <h2>Weather App</h2>
       <label>
         Enter City:
-        <input
-          type="text"
-          value={city}
-          onChange={(e) => setCity(e.target.value)}
-        />
+        <input value={city} onChange={(e) => setCity(e.target.value)} />
       </label>
       <button onClick={fetchWeather}>Get Weather</button>
 
